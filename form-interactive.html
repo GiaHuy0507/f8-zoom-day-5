@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+  </head>
+  <body>
+    <form action="" class="form" autocomplete="off">
+      <h1 class="form-heading">Registration Form</h1>
+      <div class="form-group">
+        <label for="display-name" class="form-label required">
+          Display Name
+        </label>
+        <input
+          class="form-input"
+          id="display-name"
+          placeholder="Display Name..."
+          spellcheck="false"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label required"> Email </label>
+        <input
+          type="email"
+          class="form-input"
+          id="email"
+          placeholder="Email..."
+          autocomplete="new-email"
+          spellcheck="false"
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label required"> Phone Number </label>
+        <input
+          type="text"
+          class="form-input"
+          id="phone"
+          placeholder="Phone Number..."
+          spellcheck="false"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label required"> Password </label>
+        <input
+          type="password"
+          class="form-input"
+          id="password"
+          placeholder="Password..."
+          spellcheck="false"
+        />
+      </div>
+      <div class="form-group">
+        <label for="confirm-password" class="form-label required">
+          Confirm Password
+        </label>
+        <input
+          type="password"
+          class="form-input"
+          id="confirm-password"
+          placeholder="Confirm Password..."
+          spellcheck="false"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label required">Gender</label>
+        <label>
+          <input type="radio" name="gender" value="male" checked />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" />
+          Female
+        </label>
+        <label>
+          <input type="radio" name="gender" value="other" />
+          Other
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="date-of-birth" class="form-label required"
+          >Date of Birth</label
+        >
+        <input class="form-input" type="date" name="" id="date-of-birth" />
+      </div>
+      <div class="form-group">
+        <label for="address" class="form-label required"> Address </label>
+        <input
+          class="form-input"
+          type="text"
+          id="address"
+          placeholder="Address..."
+        />
+      </div>
+      <div class="form-group">
+        <label for="profile-picture" class="form-label">
+          Profile Picture
+        </label>
+        <label for="profile-picture" class="form-avatar">
+          <img
+            src="./img/avt-placeholder.avif"
+            alt=""
+            class="avatar-img"
+            width="100px"
+          />
+        </label>
+        <input type="file" id="profile-picture" accept="image/*" hidden />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Communication Preferences</label>
+        <label class="checkbox">
+          <input type="checkbox" name="communication" value="newsletter" />
+          Subscribe to Newsletter
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="communication" value="emails" />
+          Receive Promotional Emails
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="communication" value="updates" />
+          Get Product Updates
+        </label>
+      </div>
+      <button type="submit" class="form-btn">Register</button>
+    </form>
+  </body>
+</html>
