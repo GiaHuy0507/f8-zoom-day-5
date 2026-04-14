@@ -368,3 +368,109 @@ strong {
 .form:focus-within {
   box-shadow: 0 0 0 0.5rem rgba(62, 92, 202, 0.3);
 }
+
+/* ----------PRICING TABLE---------- */
+
+.pricing-page {
+  background: linear-gradient(#020024, #090979, #2c91b0);
+}
+.pricing {
+  display: flex;
+  gap: 1.875rem; /* 30px */
+  justify-content: center;
+  align-items: center;
+  padding: 10rem; /* 40px */
+}
+
+.card {
+  background: #eee;
+  padding: 2.5rem 1.875rem; /* 40px 30px */
+  border-radius: 0.9375rem; /* 15px */
+  text-align: center;
+  width: 20.25rem; /* 260px */
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card h2 {
+  margin-bottom: 0.9375rem; /* 15px */
+  padding-top: 2.75rem; /* 60px */
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+}
+
+.card h1 {
+  margin-bottom: 1.25rem; /* 20px */
+  font-size: 2rem; /* 32px */
+}
+
+.card h1 span {
+  font-size: 0.875rem; /* 14px */
+  color: #555;
+  padding-bottom: 1rem; /* 16px */
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 1.875rem; /* 30px */
+}
+
+.card ul li {
+  margin: 0.625rem 0; /* 10px */
+  color: #444;
+  text-align: left;
+  padding-left: 1.5rem; /* 24px */
+  position: relative;
+  margin: 1rem 0; /* 16px */
+}
+
+.card ul li::before {
+  content: "✓";
+  color: #4c5fd5;
+  position: absolute;
+  left: -1.5625rem; /* -25px */
+  top: 0;
+  padding-left: 1.25rem; /* 20px */
+}
+
+.card button {
+  padding: 0.75rem 1.25rem; /* 12px 20px */
+  border: none;
+  border-radius: 0.5rem; /* 8px */
+  background: #4c5fd5;
+  color: white;
+  cursor: pointer; /* Có thể nhấp */
+  margin-top: 3rem; /* 48px */
+}
+
+/* Card nổi bật */
+.card:nth-child(2) {
+  background: #141a36;
+  color: white;
+  transform: scale(1.05);
+}
+
+.card.active ul li {
+  color: #ddd;
+}
+
+.card.active h1 span {
+  color: #bbb;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(40, 50, 100, 0.5);
+}
+
+/* Top Badge */
+.top {
+  position: absolute;
+  top: -0.9375rem; /* 40px */
+  left: 0;
+  width: 100%;
+  background: #4c5fd5;
+  color: white;
+  padding: 0.625rem; /* 10px */
+  border-radius: 0.9375rem 0.9375rem 0 0; /* 15px */
+  font-size: 0.875rem; /* 14px */
+}
