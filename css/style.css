@@ -9,6 +9,7 @@ body {
 }
 
 /* ----------CV---------- */
+
 .container-cv {
   background-color: #c3a39f;
   padding-bottom: 1.25rem; /* 20px */
@@ -189,6 +190,10 @@ strong {
 }
 
 /* ----------FORM---------- */
+.form-body {
+  background-color: lightslategrey;
+  padding: 2rem; /* 32px */
+}
 
 .form {
   width: 25rem; /* 400px */
@@ -373,6 +378,7 @@ strong {
 
 .pricing-page {
   background: linear-gradient(#020024, #090979, #2c91b0);
+  height: 100vh;
 }
 .pricing {
   display: flex;
